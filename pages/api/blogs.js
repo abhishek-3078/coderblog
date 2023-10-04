@@ -13,7 +13,7 @@ export default async function handler(req, res) {
   try {
 
     await dbConnect();
-
+    
     let data=await Blog.find({})
     let allCount=data.length
     data=data.slice(0,parseInt(req.query.count)+2)

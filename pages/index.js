@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import Link from 'next/link'
-
+import moment from 'moment/moment'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -43,7 +43,10 @@ export default function Home(props) {
           return (
        
             <div className="blogItems" key={blog.slug}>
-              <h1>{blog.title}</h1>
+              <div className='flex'>
+                <h1>{blog.title}</h1>
+                <p className={styles.time}>{moment(blog.createdAt).fromNow()} </p>
+              </div>
               <p>{blog.metadesc} </p>
               <Link href={`/blogpost/${blog.slug}`}>
               <button className={styles.btn}>Read More</button></Link>
