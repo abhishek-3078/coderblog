@@ -1,0 +1,22 @@
+.container{
+    width: 50vw;
+    margin:45px auto;
+    
+}
+.container h2{
+    margin-top: 12px;
+}
+
+.center{
+    text-align: center;
+}
+.container li{
+    list-style:inside;
+    
+}
+
+@media (max-width:800px){
+    .container{
+        width: 90vw;
+    }
+}
