@@ -14,6 +14,9 @@ const BlogSchema = new mongoose.Schema({
   },
   metadesc:{
     type:String
+  },
+  author:{
+    type:String
   }
 },{
   timestamps:true

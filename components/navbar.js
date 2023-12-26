@@ -21,7 +21,7 @@ const navbar = () => {
               <Link href="/about" >About</Link>
             </li>
             <li className={(router.pathname=='/createblog')?'active':''} >
-              <Link href="/about" >Post</Link>
+              <Link href="/createblog" >Post</Link>
             </li>
             
             <li className={(router.pathname=='/contact')?'active':''}>
